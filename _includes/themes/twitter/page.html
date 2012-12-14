@@ -1,0 +1,20 @@
+<div class="page-header">
+          <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+        </div>
+<div class="row">
+  <div class="span9">
+    {{ content }}
+  </div>
+  <nav class="span3">
+    	<div class="well sidebar-nav">
+        <h3>Посты</h3>
+        <hr />
+        <div id="posts">
+        {% for post in site.posts limit:10%}
+        <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+        {% endfor %}
+        <hr />
+        </div>
+        </div>
+  </nav>
+</div>
