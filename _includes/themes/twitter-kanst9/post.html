@@ -1,0 +1,40 @@
+<div class="page-header">
+  <h1>{{ page.title }} </h1>
+</div>
+
+<div class="row">
+  <div class="span9">
+    {{ content }}
+    <hr>
+    <div class="pagination pagination-centered">
+      <ul>
+      {% if page.previous %}
+        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Предыдущая статья</a></li>
+      {% else %}
+        <li class="prev disabled"><a>&larr; Предыдущая статья</a></li>
+      {% endif %}
+        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Архив</a></li>
+      {% if page.next %}
+        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Следующая статья &rarr;</a></li>
+      {% else %}
+        <li class="next disabled"><a>Следующая статья &rarr;</a>
+      {% endif %}
+      </ul>
+    </div>
+    <hr>
+    {% include JB/comments %}
+  </div>
+  
+  <nav class="span3">
+      <div class="well sidebar-nav">
+        <h3>Другие посты</h3>
+        <hr />
+        <div id="posts">
+        {% for post in site.posts limit:10%}
+        <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+        {% endfor %}
+        <hr>   
+        </div>
+        </div>
+  </nav>
+</div>
