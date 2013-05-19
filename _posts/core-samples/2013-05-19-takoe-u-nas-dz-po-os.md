@@ -4,7 +4,7 @@ title: Типо обзор ОС ArchLinux.
 category : trash
 tags : [Linux, ArchLinux, OS, vse_ploho]
 ---
-
+{% include JB/setup %}
 
 __________________________________
 
