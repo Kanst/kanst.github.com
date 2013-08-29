@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Типо обзор ОС ArchLinux.
+title: Типо обзор ОС ArchLinux. سمَـَّوُوُحخ ̴̐خ ̴̐خ ̴̐خ امارتيخ ̴̐خ
 category : trash
 tags : [Linux, ArchLinux, OS, vse_ploho]
 ---
